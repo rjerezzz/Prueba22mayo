@@ -1,4 +1,3 @@
-
 string[] productos = new string[15];
 int[] cantidad = new int[15];
 double[] precio = new double[15];
@@ -22,82 +21,92 @@ do
 
     switch (opcion)
     {
-    case 1:
+        case 1:
 
-        if (contador >= productos.Length)
-        {
-            Console.WriteLine("No hay espacio para más productos.");
+            if (contador >= productos.Length)
+            {
+                Console.WriteLine("No hay espacio para más productos.");
+                break;
+            }
+
+            Console.WriteLine("Ingrese el nombre del producto:");
+            productos[contador] = Console.ReadLine();
+
+            while (true)
+            {
+                Console.WriteLine("Ingrese la cantidad:");
+
+                if (int.TryParse(Console.ReadLine(), out cantidad[contador]))
+                    break;
+
+                Console.WriteLine("Solo números enteros.");
+            }
+
+            while (true)
+            {
+                Console.WriteLine("Ingrese el precio:");
+
+                if (double.TryParse(Console.ReadLine(), out precio[contador]))
+                    break;
+
+                Console.WriteLine("Solo números válidos.");
+            }
+
+            contador++;
+
             break;
-        }
 
-        Console.WriteLine("Ingrese el nombre del producto:");
-        productos[contador] = Console.ReadLine();
-
-        while (true)
-        {
-            Console.WriteLine("Ingrese la cantidad:");
-
-            if (int.TryParse(Console.ReadLine(), out cantidad[contador]))
-                break;
-
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Solo números enteros.");
-            Console.ResetColor();
-        }
-
-        while (true)
-        {
-            Console.WriteLine("Ingrese el precio:");
-
-            if (double.TryParse(Console.ReadLine(), out precio[contador]))
-                break;
-
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Solo números válidos.");
-            Console.ResetColor();
-        }
-
-        contador++;
-
-        break;
         case 2:
-            // Código para mostrar productos
+            for (int i = 0; i < contador; i++)
+            {
+                Console.WriteLine($"Producto: {productos[i]} | Cantidad: {cantidad[i]} | Precio: {precio[i]}");
+            }
             break;
+
         case 3:
-            // Código para calcular total vendido
+            suma = 0;
+            for (int i = 0; i < contador; i++)
+            {
+                suma += cantidad[i] * precio[i];
+            }
+            Console.WriteLine($"Total vendido: {suma}");
             break;
+
         case 4:
-            // Código para mostrar producto más vendido
+            int max = cantidad[0];
+            string prod = productos[0];
+
+            for (int i = 1; i < contador; i++)
+            {
+                if (cantidad[i] > max)
+                {
+                    max = cantidad[i];
+                    prod = productos[i];
+                }
+            }
+
+            Console.WriteLine($"Más vendido: {prod} ({max})");
             break;
+
         case 5:
-            // Código para mostrar promedio de ventas
+            double total = 0;
+            int cantTotal = 0;
+
+            for (int i = 0; i < contador; i++)
+            {
+                total += cantidad[i] * precio[i];
+                cantTotal += cantidad[i];
+            }
+
+            Console.WriteLine($"Promedio: {total / cantTotal}");
             break;
+
         case 6:
             salir = true;
-            Console.WriteLine("Saliendo del programa...");
-            break;
-        default:
-            Console.WriteLine("Opción no válida. Por favor, intente nuevamente.");
             break;
     }
 
-}while (!salir);
+    Console.WriteLine();
+    Console.WriteLine();
 
-
-
-
-
-
-
-/* Integrante 3 va a realizar los calculos y las estadisticas. Requerimiento 4, 6*/
-
-
-
-
-
-/* Integrante 4 va a mostrar los resultados y corregir errores. Requerimientos 3, 5*/
-
-
-
-
-
+} while (!salir);
