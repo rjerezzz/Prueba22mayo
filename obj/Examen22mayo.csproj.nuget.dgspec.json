@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\labcisco.UAM\\Documents\\Exámen 22-05-26\\Prueba22mayo\\Examen22mayo.csproj": {}
+    "C:\\Users\\labcisco.UAM\\Downloads\\Examen22mayo\\Examen22mayo\\Examen22mayo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\labcisco.UAM\\Documents\\Exámen 22-05-26\\Prueba22mayo\\Examen22mayo.csproj": {
+    "C:\\Users\\labcisco.UAM\\Downloads\\Examen22mayo\\Examen22mayo\\Examen22mayo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\labcisco.UAM\\Documents\\Exámen 22-05-26\\Prueba22mayo\\Examen22mayo.csproj",
+        "projectUniqueName": "C:\\Users\\labcisco.UAM\\Downloads\\Examen22mayo\\Examen22mayo\\Examen22mayo.csproj",
         "projectName": "Examen22mayo",
-        "projectPath": "C:\\Users\\labcisco.UAM\\Documents\\Exámen 22-05-26\\Prueba22mayo\\Examen22mayo.csproj",
+        "projectPath": "C:\\Users\\labcisco.UAM\\Downloads\\Examen22mayo\\Examen22mayo\\Examen22mayo.csproj",
         "packagesPath": "C:\\Users\\labcisco.UAM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\labcisco.UAM\\Documents\\Exámen 22-05-26\\Prueba22mayo\\obj\\",
+        "outputPath": "C:\\Users\\labcisco.UAM\\Downloads\\Examen22mayo\\Examen22mayo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

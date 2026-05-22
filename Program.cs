@@ -3,6 +3,7 @@ string[] productos = new string[15];
 int[] cantidad = new int[15];
 double[] precio = new double[15];
 double suma = 0;
+int contador = 0;
 
 bool salir = false;
 
@@ -21,31 +22,44 @@ do
 
     switch (opcion)
     {
-        case 1:
-            for (int i = 0; i < productos.Length; i++)
-            {
-                {
-                    try
-                    {
-                        Console.WriteLine($"Ingrese el nombre del producto {i + 1}: ");
-                        productos[i] = Console.ReadLine();
+    case 1:
 
-                        Console.WriteLine($"Ingrese la cantidad del producto {i + 1}: ");
-                        cantidad[i] = int.Parse(Console.ReadLine());
-
-                        Console.WriteLine($"Ingrese el precio del producto {i + 1}: ");
-                        precio[i] = double.Parse(Console.ReadLine());
-                    }
-                    catch
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Entrada inválida. Por favor, ingrese un valor correcto.");
-                        Console.ResetColor();
-                        i--;
-                    }
-                }
-            }
+        if (contador >= productos.Length)
+        {
+            Console.WriteLine("No hay espacio para más productos.");
             break;
+        }
+
+        Console.WriteLine("Ingrese el nombre del producto:");
+        productos[contador] = Console.ReadLine();
+
+        while (true)
+        {
+            Console.WriteLine("Ingrese la cantidad:");
+
+            if (int.TryParse(Console.ReadLine(), out cantidad[contador]))
+                break;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Solo números enteros.");
+            Console.ResetColor();
+        }
+
+        while (true)
+        {
+            Console.WriteLine("Ingrese el precio:");
+
+            if (double.TryParse(Console.ReadLine(), out precio[contador]))
+                break;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Solo números válidos.");
+            Console.ResetColor();
+        }
+
+        contador++;
+
+        break;
         case 2:
             // Código para mostrar productos
             break;
