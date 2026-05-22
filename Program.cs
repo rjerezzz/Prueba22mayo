@@ -8,28 +8,33 @@
 
 for (int i = 0; i < productos.Length; i++)
 {
+    Console.WriteLine($"Ingrese el nombre del producto {i + 1}: ");
+    productos[i] = Console.ReadLine();
+
+    while (true)
     {
-        try
-        {
-            Console.WriteLine($"Ingrese el nombre del producto {i + 1}: ");
-            productos[i] = Console.ReadLine();
+        Console.WriteLine($"Ingrese la cantidad del producto {i + 1}: ");
 
-            Console.WriteLine($"Ingrese la cantidad del producto {i + 1}: ");
-            cantidad[i] = int.Parse(Console.ReadLine());
+        if (int.TryParse(Console.ReadLine(), out cantidad[i]))
+            break;
 
-            Console.WriteLine($"Ingrese el precio del producto {i + 1}: ");
-            precio[i] = double.Parse(Console.ReadLine());
-        }
-        catch
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Entrada inválida. Por favor, ingrese un valor correcto.");
-            Console.ResetColor();
-            i--;
-        }
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Formato inválido, porfavor ingrese solo números enteros.");
+        Console.ResetColor();
+    }
+
+    while (true)
+    {
+        Console.WriteLine($"Ingrese el precio del producto {i + 1}: ");
+
+        if (double.TryParse(Console.ReadLine(), out precio[i]))
+            break;
+
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Formato inválido, porfavor ingrese solo números enteros o con decimales.");
+        Console.ResetColor();
     }
 }
-
 
 
 
