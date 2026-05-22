@@ -1,0 +1,15 @@
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\obj\Debug\net9.0\Examen22mayo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\obj\Debug\net9.0\Examen22mayo.AssemblyInfoInputs.cache
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\obj\Debug\net9.0\Examen22mayo.AssemblyInfo.cs
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\obj\Debug\net9.0\Examen22mayo.csproj.CoreCompileInputs.cache
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\obj\Debug\net9.0\Examen22mayo.sourcelink.json
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\bin\Debug\net9.0\Examen22mayo.exe
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\bin\Debug\net9.0\Examen22mayo.deps.json
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\bin\Debug\net9.0\Examen22mayo.runtimeconfig.json
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\bin\Debug\net9.0\Examen22mayo.dll
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\bin\Debug\net9.0\Examen22mayo.pdb
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\obj\Debug\net9.0\Examen22mayo.dll
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\obj\Debug\net9.0\refint\Examen22mayo.dll
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\obj\Debug\net9.0\Examen22mayo.pdb
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\obj\Debug\net9.0\Examen22mayo.genruntimeconfig.cache
+C:\Users\labcisco.UAM\Desktop\Examen 22 mayo\Prueba22mayo\obj\Debug\net9.0\ref\Examen22mayo.dll
